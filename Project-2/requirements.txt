@@ -1,5 +1,5 @@
-ipython
-jupyterlab
+altair<5
+joblib
 matplotlib
 numpy
 pandas
