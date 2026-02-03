@@ -1,8 +1,9 @@
-altair<5
+altair==4.2.2
 joblib
 matplotlib
 numpy
 pandas
 scikit-learn
 seaborn
-streamlit
+streamlit==1.32.0
+pillow
