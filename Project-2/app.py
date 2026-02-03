@@ -1,9 +1,11 @@
 import streamlit as st
 import joblib
 import numpy as np
+import os
 
-# Load the trained model (ensure loan_model.pkl is in the same folder)
-model = joblib.load('loan_model.pkl')
+# Load the trained model (use script directory for Streamlit Cloud)
+script_dir = os.path.dirname(os.path.abspath(__file__))
+model = joblib.load(os.path.join(script_dir, 'loan_model.pkl'))
 
 st.title("🏦 Loan Default Predictor")
 st.write("Enter applicant details to predict default risk.")
